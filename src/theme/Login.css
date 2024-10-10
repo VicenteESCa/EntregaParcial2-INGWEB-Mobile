@@ -1,5 +1,6 @@
 .custom{
     --background: linear-gradient(180deg, #4b0082, #8a2be2);
+    padding: 0px 0px 0px 50px;
 }
 
 .Button-CrearCuenta, .Button-Iniciar{
@@ -18,3 +19,6 @@
 .semi-transparent-text::placeholder {
     color: rgba(128, 128, 128, 0.5); /* Color gris semi-transparente */
 }
+.menu-button {
+    margin: 5px 0px 0px 16px;
+  }

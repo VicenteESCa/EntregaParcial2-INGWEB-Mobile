@@ -20,7 +20,7 @@ const Login: React.FC = () => {
             <IonTitle className='.CCentrado'>Iniciar sesion</IonTitle>
           </IonToolbar>
         </IonItem>
-        <IonItem>
+        <IonItem>     
           <IonTextarea  placeholder="Ingresa tu correo electrónico"
                         className="semi-transparent-text"></IonTextarea>
         </IonItem>

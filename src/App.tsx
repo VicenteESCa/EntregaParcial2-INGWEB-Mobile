@@ -1,7 +1,6 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/react';
+import {IonTitle, IonMenuButton, IonButtons, IonToolbar,  IonHeader, IonPage, IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -33,21 +32,27 @@ import '@ionic/react/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
 import Login from './pages/Login'
+import Menu from './components/Menu'
+import Home from './pages/Home';
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-
+      {/* SplitPane para manejar el menú lateral */}
       <IonSplitPane contentId='main-content'>
-        
-    <IonRouterOutlet id='main-content'>
-
-        <Route path="/login" component={Login}></Route>
-        <Route path="/home" component={Home}></Route>
-        <Redirect from="/" to="/home" exact />
-
-    </IonRouterOutlet>
+        <Menu /> {/* Aquí se coloca el menú lateral */}
+        <IonPage id="main-content"> {/* Contenido principal de la página */}
+              <IonButtons slot="start">
+                  <IonMenuButton className='menu-button'/> {/* Este botón controla el menú lateral */}
+              </IonButtons>
+          <IonRouterOutlet id='main-content'>
+            {/* Definición de rutas */}
+            <Route path="/login" component={Login}></Route>
+            <Route path="/home" component={Home}></Route>
+            <Redirect from="/" to="/home" exact />
+          </IonRouterOutlet>
+        </IonPage>
       </IonSplitPane>
     </IonReactRouter>
   </IonApp>
