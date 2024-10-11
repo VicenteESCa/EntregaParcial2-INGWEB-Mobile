@@ -98,7 +98,7 @@ const Sign_In: React.FC = () => {
               labelPlacement="floating"
               helperText="Confirma tu contraseña"
               errorText="Contraseña invalida"
-              onIonInput={(event) => validate(event)}
+              onIonInput={(event) => Validate_Password(event)}
               onIonBlur={() => markTouched()}
               ></IonTextarea>
             </IonToolbar>

@@ -5,3 +5,5 @@ http://ionicframework.com/docs/theming/ */
     margin: 5px 0px 0px 16px;
 
   }
+  /* variables.css */
+@import '~swiper/swiper-bundle.css';
