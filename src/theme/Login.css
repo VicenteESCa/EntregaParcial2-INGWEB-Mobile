@@ -3,22 +3,36 @@
     padding: 0px 0px 0px 50px;
 }
 
-.Button-CrearCuenta, .Button-Iniciar{
+
+.my-button{
     --background: #8a2be2;
-    width: 150px;
+    width: 200px;
+    padding-left:  20px;
+    padding-right: 20px;
 }
+
+.botones-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px; /* Espacio entre los botones */
+  }
+
+.menu-button {
+    margin: 5px 0px 0px 16px;
+}
+
 .Titulo-Correo{
     --margin: 0px;
     text-align: center
 }
-.botones-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Espacio entre los botones */
-  }
+
 .semi-transparent-text::placeholder {
     color: rgba(128, 128, 128, 0.5); /* Color gris semi-transparente */
 }
-.menu-button {
-    margin: 5px 0px 0px 16px;
-  }
+.login-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

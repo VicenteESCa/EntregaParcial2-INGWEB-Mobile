@@ -1,4 +1,4 @@
-import { IonButton, IonContent, IonHeader, IonItem, IonPage, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
+import { IonCard, IonButton, IonContent, IonHeader, IonItem, IonPage, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
 import '../theme/Login.css';
 
 const Login: React.FC = () => {
@@ -6,7 +6,7 @@ const Login: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar className="custom">
-          <IonTitle>Login</IonTitle>
+          <IonTitle></IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -15,27 +15,29 @@ const Login: React.FC = () => {
             <IonTitle size="large">Login</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonItem>
-          <IonToolbar className='Titulo-Correo'>
-            <IonTitle className='.CCentrado'>Iniciar sesion</IonTitle>
-          </IonToolbar>
-        </IonItem>
-        <IonItem>     
-          <IonTextarea  placeholder="Ingresa tu correo electrónico"
-                        className="semi-transparent-text"></IonTextarea>
-        </IonItem>
-        <IonItem>
-          <IonToolbar>
-            <IonTextarea  placeholder="Ingresa tu Contraseña"
-                        className="semi-transparent-text"></IonTextarea>
-          </IonToolbar>
-        </IonItem>
-        <IonItem>
-          <IonToolbar className="botones-container">
-            <IonButton className="Button-Iniciar" routerLink='/Home'>Iniciar</IonButton>
-            <IonButton className="Button-CrearCuenta">Crear cuenta</IonButton>
-          </IonToolbar>
-        </IonItem>
+          <IonItem>
+            <IonToolbar className='Titulo-Correo'>
+              <IonTitle className='CCentrado'>Iniciar sesion</IonTitle>
+            </IonToolbar>
+          </IonItem>
+          <IonItem>     
+            <IonTextarea  placeholder="Ingresa tu correo electrónico"
+                          className="semi-transparent-text"></IonTextarea>
+          </IonItem>
+          <IonItem>
+            <IonToolbar>
+              <IonTextarea placeholder="Ingresa tu Contraseña"
+                          className="semi-transparent-text"></IonTextarea>
+            </IonToolbar>
+          </IonItem>
+          <div className="login-wrapper">
+            <IonItem>
+              <IonToolbar>
+                <IonButton className="my-button" routerLink='/Home'>Iniciar</IonButton>
+                <IonButton className="my-button" routerLink='/Sign_In'>Crear cuenta</IonButton>
+              </IonToolbar>
+            </IonItem>
+          </div>
       </IonContent>
     </IonPage>
   );

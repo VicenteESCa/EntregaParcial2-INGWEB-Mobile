@@ -5,7 +5,11 @@ import ExploreContainer from '../components/ExploreContainer';
 const Home: React.FC = () => {
   return (
     <IonPage>
-        <ExploreContainer />
+        <IonHeader>
+        <IonToolbar className="custom">
+          <IonTitle></IonTitle>
+        </IonToolbar>
+      </IonHeader>
     </IonPage>
   );
 };

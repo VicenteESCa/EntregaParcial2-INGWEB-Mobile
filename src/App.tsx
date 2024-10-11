@@ -32,16 +32,17 @@ import '@ionic/react/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
 import Login from './pages/Login'
+import Sign_In from './pages/Sign_In';
 import Menu from './components/Menu'
 import Home from './pages/Home';
+
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       {/* SplitPane para manejar el menú lateral */}
-      <IonSplitPane contentId='main-content'>
-        <Menu /> {/* Aquí se coloca el menú lateral */}
+        <Menu/> {/* Aquí se coloca el menú lateral */}
         <IonPage id="main-content"> {/* Contenido principal de la página */}
               <IonButtons slot="start">
                   <IonMenuButton className='menu-button'/> {/* Este botón controla el menú lateral */}
@@ -50,10 +51,10 @@ const App: React.FC = () => (
             {/* Definición de rutas */}
             <Route path="/login" component={Login}></Route>
             <Route path="/home" component={Home}></Route>
+            <Route path="/sign_in" component={Sign_In}></Route>
             <Redirect from="/" to="/home" exact />
           </IonRouterOutlet>
         </IonPage>
-      </IonSplitPane>
     </IonReactRouter>
   </IonApp>
 );

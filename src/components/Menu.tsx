@@ -4,13 +4,13 @@ import '../theme/Login.css';
 
 const Menu:React.FC=()=>{
     return(
-        <IonMenu contentId="main-content" type="overlay">
+        <IonMenu contentId="main-content">
         <IonHeader>
-            <IonToolbar className="custom">
+            <IonToolbar className="custom" id="main-content">
                 <IonTitle>Menu</IonTitle>
             </IonToolbar>
         </IonHeader>
-            <IonContent className="ion-padding">
+            <IonContent className="ion-padding" id="main-content">
                     <IonList>
                         <IonMenuToggle>
                             <IonItem routerLink='/home'> 
@@ -20,6 +20,11 @@ const Menu:React.FC=()=>{
                         <IonMenuToggle>
                             <IonItem routerLink='/login'>
                                 <IonLabel>Inicio de sesion</IonLabel>
+                            </IonItem>
+                        </IonMenuToggle>
+                        <IonMenuToggle>
+                            <IonItem routerLink='/sign_in'>
+                                <IonLabel>Registrarse</IonLabel>
                             </IonItem>
                         </IonMenuToggle>
                     </IonList>

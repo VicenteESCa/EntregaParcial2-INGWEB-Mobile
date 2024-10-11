@@ -1,20 +1,4 @@
 .custom{
     --background: linear-gradient(180deg, #4b0082, #8a2be2);
-}
-
-.Button-CrearCuenta, .Button-Iniciar{
-    --background: #8a2be2;
-    width: 150px;
-}
-.Titulo-Correo{
-    --margin: 0px;
-    text-align: center
-}
-.botones-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Espacio entre los botones */
-  }
-.semi-transparent-text::placeholder {
-    color: rgba(128, 128, 128, 0.5); /* Color gris semi-transparente */
+    padding: 0px 0px 0px 50px;
 }

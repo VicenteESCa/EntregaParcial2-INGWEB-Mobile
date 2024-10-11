@@ -1,0 +1,8 @@
+.item-spacing {
+    margin-top:    10px; /* Adjust this value as needed */
+    margin-bottom: 10px; /* Adjust this value as needed */
+}
+.custom{
+    --background: linear-gradient(180deg, #4b0082, #8a2be2);
+    padding: 0px 0px 0px 50px;
+}
