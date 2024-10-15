@@ -36,11 +36,7 @@ const swiperCaract0=
 const Home: React.FC = () =>{
   return(
     <IonPage>
-        <IonHeader>
-        <IonToolbar className="custom">
-          <IonTitle></IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <My_Toolbar>Home</My_Toolbar>
       <IonContent fullscreen>
         <IonHeader>
           <IonTitle style={{fontSize:"40px"}}>Hi, user!!</IonTitle>

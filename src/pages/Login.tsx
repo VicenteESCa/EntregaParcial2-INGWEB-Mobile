@@ -1,23 +1,17 @@
-import { IonCard, IonButton, IonContent, IonHeader, IonItem, IonPage, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonIcon, IonCard, IonButton, IonContent, IonHeader, IonItem, IonPage, IonTextarea, IonTitle, IonToolbar, IonImg } from '@ionic/react';
 import '../theme/Login.css';
+import My_Toolbar from '../components/My_Toolbar'
 
 const Login: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar className="custom">
-          <IonTitle></IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <My_Toolbar>
+        Login
+      </My_Toolbar>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Login</IonTitle>
-          </IonToolbar>
-        </IonHeader>
           <IonItem>
             <IonToolbar className='Titulo-Correo'>
-              <IonTitle className='CCentrado'>Iniciar sesion</IonTitle>
+              <IonTitle>Iniciar sesion</IonTitle>
             </IonToolbar>
           </IonItem>
           <IonItem>     

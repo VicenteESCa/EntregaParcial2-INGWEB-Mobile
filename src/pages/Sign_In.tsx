@@ -4,6 +4,7 @@ import { clsx } from 'clsx';
 import ExploreContainer from '../components/ExploreContainer';
 import '../theme/Login.css';
 import '../theme/Sign_In.css';
+import My_Toolbar from '../components/My_Toolbar'
 
 const Sign_In: React.FC = () => {
   const [isTouched, setIsTouched] = useState(false);
@@ -34,17 +35,8 @@ const Sign_In: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar className="custom">
-          <IonTitle>Sign_In</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <My_Toolbar>Sign In</My_Toolbar>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Sing_In</IonTitle>
-          </IonToolbar>
-        </IonHeader>
         <IonItem>
           <IonToolbar className='Titulo-Correo'>
             <IonTitle>Registrarse</IonTitle>

@@ -1,16 +1,13 @@
-.custom{
-    --background: linear-gradient(180deg, #4b0082, #8a2be2);
-    padding: 0px 0px 0px 50px;
-}
 .swiper-slide {
   width: auto;  /* Deja que las tarjetas tengan su propio tamaño */
   height: auto; /* Para espaciar las tarjetas si es necesario */
-  }
+}
   
 .swiper-container{
     width: 100%; /* Para que el Swiper use todo el ancho */
     height: auto;
-  }
+}
+
 .cards{
   height:150px;
   width: 160px;
@@ -19,8 +16,8 @@
   background-size: contain ;
   background-repeat: no-repeat;
   background-position: center;
-
 }
+
 .cards[data-img] {
   background: var(--img-background);
 }
