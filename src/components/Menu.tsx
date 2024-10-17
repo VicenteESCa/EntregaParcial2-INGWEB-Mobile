@@ -10,7 +10,7 @@ const Menu:React.FC=()=>{
                 <IonTitle>Menu</IonTitle>
             </IonToolbar>
         </IonHeader>
-            <IonContent className="ion-padding" id="main-content">
+            <IonContent  id="main-content">
                     <IonList>
                         <IonMenuToggle>
                             <IonItem routerLink='/home'> 

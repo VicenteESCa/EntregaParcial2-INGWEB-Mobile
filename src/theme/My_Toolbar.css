@@ -23,6 +23,7 @@
     font-family: 'Title_Font';
     src: url('../assets/fonts/Jersey10-Regular.ttf');
     font-weight: bold;
+    
 }
 
 .toolbar-title {
@@ -51,4 +52,8 @@ ion-button {
   --background-focused: none;
 
   --border-width: 0px;
+}
+
+.menu_button{
+    visibility: hidden;
 }
