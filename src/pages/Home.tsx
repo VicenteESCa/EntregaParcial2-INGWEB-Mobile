@@ -11,16 +11,11 @@ import SwiperCore from 'swiper'
 
 import probarImage from '../theme/images/probar.jpg';
 import python from '../theme/images/python.jpg';
-<<<<<<< HEAD
-import My_Toolbar from '../components/My_Toolbar';
-=======
 import Database from '../theme/images/BaseDeDatos.jpg';
 import C_Card from '../theme/images/C-CardTotal.jpg';
 import csharp_card from '../theme/images/Csharp-CardTotal.jpg';
 
 import My_Toolbar from '../components/My_Toolbar';
-
->>>>>>> 96a4c91231b22837c535dbab20030c22f4585578
 SwiperCore.use([Navigation])
 
 const cardDataProgram=[

@@ -26,6 +26,9 @@ const Menu:React.FC=()=>{
                             <IonItem routerLink='/sign_in'>
                                 <IonLabel>Registrarse</IonLabel>
                             </IonItem>
+                            <IonItem routerLink='/create_post'>
+                                <IonLabel>Crear Post</IonLabel>
+                            </IonItem>
                         </IonMenuToggle>
                     </IonList>
             </IonContent>
