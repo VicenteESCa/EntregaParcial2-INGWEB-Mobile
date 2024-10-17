@@ -9,6 +9,7 @@ import 'swiper/css';
 import SwiperCore from 'swiper'
 import probarImage from '../theme/images/probar.jpg';
 import python from '../theme/images/python.jpg';
+import My_Toolbar from '../components/My_Toolbar';
 SwiperCore.use([Navigation])
 
 const cardDataProgram=[

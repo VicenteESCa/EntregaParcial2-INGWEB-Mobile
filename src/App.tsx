@@ -44,9 +44,6 @@ const App: React.FC = () => (
       {/* SplitPane para manejar el menú lateral */}
         <Menu/> {/* Aquí se coloca el menú lateral */}
         <IonPage id="main-content"> {/* Contenido principal de la página */}
-              <IonButtons slot="start">
-                  <IonMenuButton className='menu-button'/> {/* Este botón controla el menú lateral */}
-              </IonButtons>
           <IonRouterOutlet id='main-content'>
             {/* Definición de rutas */}
             <Route path="/login" component={Login}></Route>
