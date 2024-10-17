@@ -11,13 +11,38 @@
 .cards{
   height:150px;
   width: 160px;
-  margin: auto;
+  margin:auto;
+  margin-bottom: 5%;
   /*background-image: url("../theme/images/probar.jpg");*/
   background-size: contain ;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius:12px;
 }
 
 .cards[data-img] {
   background: var(--img-background);
+}
+
+
+.roboto-slab-Headers-Font {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-size : 8vw;
+  font-style: normal;
+  margin:10px 12px 10px 10px;
+  padding-left: 50px;
+  position: relative;
+  font-weight: 500;
+}
+
+.montserrat-Parrafos-font{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 3vw;
+}
+
+body{
+  font-size: 100%;
 }
