@@ -10,13 +10,15 @@ const My_Toolbar = ({children} : PropsWithChildren)=>{
     return(
       <IonHeader className="Radius-Box-Sizing-toolbar">
           <IonToolbar className="custom">
+            
                 <IonMenuButton slot="start" className='menu-button'/> {/* Este botón controla el menú lateral */}
                 <IonButton id="bottom-start" color="none" slot="end" size="small" shape={'circle' as any}>
                     <img className="profile_img" src="src/assets/img_random.jpg"/>
                 </IonButton>
-                <IonPopover trigger="bottom-start" side="bottom" alignment="start">
+
+                <IonPopover trigger="bottom-start" side="bottom">
                     <IonCard>
-                        <IonItem routerLink="/lgin">
+                        <IonItem routerLink="/login">
                             <IonText>sexo</IonText>
                         </IonItem>
                     </IonCard>           

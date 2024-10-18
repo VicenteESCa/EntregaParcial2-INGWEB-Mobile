@@ -1,7 +1,10 @@
 {
-  "name": "Intento2",
+  "name": "ep2",
   "integrations": {
     "capacitor": {}
   },
-  "type": "react-vite"
+  "type": "react-vite",
+  "server":{
+    "port": 3000
+  }
 }
