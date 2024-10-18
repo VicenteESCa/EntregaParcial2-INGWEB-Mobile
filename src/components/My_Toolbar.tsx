@@ -16,9 +16,10 @@ const My_Toolbar = ({children} : PropsWithChildren)=>{
                     <img className="profile_img" src="src/assets/img_random.jpg"/>
                 </IonButton>
                 agrege una pagina de los comentari
+s
                 <IonPopover trigger="bottom-start" side="bottom">
                     <IonCard>
-                        <IonItem routerLink="/edit_profile">
+                        <IonItem routerLink="/edit_prrofile">
                             <IonText>sexo</IonText>
                         </IonItem>
                     </IonCard>           
