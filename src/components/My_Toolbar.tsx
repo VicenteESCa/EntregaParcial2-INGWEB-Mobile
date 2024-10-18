@@ -6,7 +6,7 @@ import { home, person, settings } from 'ionicons/icons';
 
 const My_Toolbar = ({children} : PropsWithChildren)=>{
     return(
-      <IonHeader>
+      <IonHeader className="Radius-Box-Sizing-toolbar">
           <IonToolbar className="custom">
               <IonMenuButton slot="start" className='menu-button'/> {/* Este botón controla el menú lateral */}
               <IonButton color="none" slot="end" size="small" shape={'circle' as any}>
