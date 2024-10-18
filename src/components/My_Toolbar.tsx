@@ -15,10 +15,10 @@ const My_Toolbar = ({children} : PropsWithChildren)=>{
                 <IonButton id="bottom-start" color="none" slot="end" size="small" shape={'circle' as any}>
                     <img className="profile_img" src="src/assets/img_random.jpg"/>
                 </IonButton>
-
+                agrege una pagina de los comentari
                 <IonPopover trigger="bottom-start" side="bottom">
                     <IonCard>
-                        <IonItem routerLink="/login">
+                        <IonItem routerLink="/edit_profile">
                             <IonText>sexo</IonText>
                         </IonItem>
                     </IonCard>           

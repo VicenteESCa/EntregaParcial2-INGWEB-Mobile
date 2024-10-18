@@ -6,4 +6,17 @@
 .link-icon {
     width:  50px;
     height: 50px;
+    text-align: center;
+}
+
+.profile_img_box {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.profile_img_box img {
+    width:  50px;
+    height:  50px;
 }

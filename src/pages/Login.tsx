@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import '../theme/Login.css';
 import { clsx } from 'clsx';
 import My_Toolbar from '../components/My_Toolbar'
+import Footer from '../components/Footer';
 
 const Login: React.FC = () => {
   const [isTouched, setIsTouched] = useState(false);
@@ -82,6 +83,7 @@ const Login: React.FC = () => {
               </IonToolbar>
             </IonItem>
           </div>
+        <Footer/>
       </IonContent>
     </IonPage>
   );
