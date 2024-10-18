@@ -1,4 +1,4 @@
-import { IonCol, IonRow, IonGrid, IonCheckbox, IonSelect, IonSelectOption, IonInputPasswordToggle, IonList, IonInput, IonButton, IonContent, IonHeader, IonItem, IonPage, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
+import { IonIcon, IonCol, IonRow, IonGrid, IonCheckbox, IonSelect, IonSelectOption, IonInputPasswordToggle, IonList, IonInput, IonButton, IonContent, IonHeader, IonItem, IonPage, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
 import React, { useState } from 'react';
 import { clsx } from 'clsx';
 import My_Toolbar from '../components/My_Toolbar'
@@ -141,10 +141,16 @@ const Edit_Profile: React.FC = () => {
              </IonCol>
           </IonRow>
         </IonGrid>
-        <IonList>
-          <IonInput>
-              <img className="link-icon" slot="start" src="src/assets/img_random.jpg" alt="caca" />
+          <IonInput fill="solid">
+            <img slot="start" style={{width: "40px"}} src="src/assets/logo-github.svg"/>
           </IonInput>
+          <IonInput fill="solid">
+            <img slot="start" style={{width: "40px"}} src="src/assets/logo-linkedin.svg"/>
+          </IonInput>
+          <IonInput fill="solid">
+            <img slot="start" style={{width: "40px"}} src="src/assets/logo-twitter.svg"/>
+          </IonInput>
+        <IonList>
         </IonList>
       </IonContent>
     </IonPage>
