@@ -8,7 +8,7 @@ import Edit_Profile from '../pages/Edit_Profile';
 
 const My_Toolbar = ({children} : PropsWithChildren)=>{
     return(
-      <IonHeader>
+      <IonHeader className="Radius-Box-Sizing-toolbar">
           <IonToolbar className="custom">
                 <IonMenuButton slot="start" className='menu-button'/> {/* Este botón controla el menú lateral */}
                 <IonButton routerLink="/edit_profile" color="none" slot="end" size="small" shape={'circle' as any}>
