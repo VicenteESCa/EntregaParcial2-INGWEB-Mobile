@@ -37,6 +37,8 @@ import Create_Post from './pages/Create_Post';
 import Menu from './components/Menu';
 import Home from './pages/Home';
 import Edit_Profile from './pages/Edit_Profile';
+import My_Posts from './pages/My_Posts';
+import Comment_Post from './pages/Comment_Post';
 
 setupIonicReact();
 
@@ -53,6 +55,8 @@ const App: React.FC = () => (
             <Route path="/sign_in" component={Sign_In}></Route>
             <Route path="/create_post" component={Create_Post}></Route>
             <Route path="/edit_profile" component={Edit_Profile}></Route>
+            <Route path="/my_posts" component={My_Posts}></Route>
+            <Route path="/comment_post" component={Comment_Post}></Route>
             <Redirect from="/" to="/home" exact />
           </IonRouterOutlet>
         </IonPage>

@@ -23,6 +23,11 @@ const Menu:React.FC=()=>{
                             </IonItem>
                         </IonMenuToggle>
                         <IonMenuToggle>
+                            <IonItem routerLink='/comment_post'>
+                                <IonLabel>Comentar post</IonLabel>
+                            </IonItem>
+                        </IonMenuToggle>
+                        <IonMenuToggle>
                             <IonItem routerLink='/sign_in'>
                                 <IonLabel>Registrarse</IonLabel>
                             </IonItem>

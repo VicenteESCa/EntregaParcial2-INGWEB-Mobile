@@ -16,7 +16,7 @@ const My_Toolbar = ({children} : PropsWithChildren)=>{
                 </IonButton>
                 <IonPopover trigger="bottom-start" side="bottom" alignment="start">
                     <IonCard>
-                        <IonItem routerLink="/lgin">
+                        <IonItem routerLink="/edit_profile">
                             <IonText>sexo</IonText>
                         </IonItem>
                     </IonCard>           

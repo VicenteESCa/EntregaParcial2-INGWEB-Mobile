@@ -19,6 +19,7 @@ import PC_Card from '../theme/images/PCBUILDNGCARD.jpg'
 import RubyLogo from '../theme/images/RubyBackground.jpg'
 
 import My_Toolbar from '../components/My_Toolbar';
+import Footer from '../components/Footer';
 SwiperCore.use([Navigation])
 
 const cardDataProgram=[
@@ -156,6 +157,7 @@ const Home: React.FC = () =>{
         </IonToolbar>
         </IonItem>
         </IonCard>
+        <Footer/>
       </IonContent>
     </IonPage>
   );

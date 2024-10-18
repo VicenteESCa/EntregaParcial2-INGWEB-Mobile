@@ -1,7 +1,8 @@
-import { IonIcon, IonCol, IonRow, IonGrid, IonCheckbox, IonSelect, IonSelectOption, IonInputPasswordToggle, IonList, IonInput, IonButton, IonContent, IonHeader, IonItem, IonPage, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
+import { IonLabel, IonIcon, IonCol, IonRow, IonGrid, IonCheckbox, IonSelect, IonSelectOption, IonInputPasswordToggle, IonList, IonInput, IonButton, IonContent, IonHeader, IonItem, IonPage, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
 import React, { useState } from 'react';
 import { clsx } from 'clsx';
 import My_Toolbar from '../components/My_Toolbar'
+import Footer from '../components/Footer';
 
 import '../theme/Edit_Profile.css';
 
@@ -93,7 +94,9 @@ const Edit_Profile: React.FC = () => {
                   ></IonTextarea>
             </IonCol>
             <IonCol>
-                <img className="profile_img" src="src/assets/img_random.jpg"/>
+                <div className="profile_img_box">
+                  <img src="src/assets/img_random.jpg"/>
+                </div>
             </IonCol>
           </IonRow>
           <IonRow>
@@ -141,6 +144,7 @@ const Edit_Profile: React.FC = () => {
              </IonCol>
           </IonRow>
         </IonGrid>
+          <IonTitle style={{"text-align": "center"}}>Links</IonTitle>
           <IonInput fill="solid">
             <img slot="start" style={{width: "40px"}} src="src/assets/logo-github.svg"/>
           </IonInput>
@@ -150,8 +154,7 @@ const Edit_Profile: React.FC = () => {
           <IonInput fill="solid">
             <img slot="start" style={{width: "40px"}} src="src/assets/logo-twitter.svg"/>
           </IonInput>
-        <IonList>
-        </IonList>
+        <Footer/>
       </IonContent>
     </IonPage>
   );

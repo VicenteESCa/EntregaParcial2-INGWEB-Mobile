@@ -5,6 +5,7 @@ import ExploreContainer from '../components/ExploreContainer';
 import '../theme/Login.css';
 import '../theme/Sign_In.css';
 import My_Toolbar from '../components/My_Toolbar'
+import Footer from '../components/Footer';
 
 const Sign_In: React.FC = () => {
   const [isTouched, setIsTouched] = useState(false);
@@ -193,6 +194,7 @@ const Sign_In: React.FC = () => {
           </IonItem>
         </div>
         </IonList>
+        <Footer/>
       </IonContent>
     </IonPage>
   );
