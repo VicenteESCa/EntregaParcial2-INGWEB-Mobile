@@ -4,7 +4,7 @@ import { clsx } from 'clsx';
 import My_Toolbar from '../components/My_Toolbar'
 import Footer from '../components/Footer';
 
-import '../theme/Edit_Profile.css';
+import '../theme/Comment_Post.css';
 
 const Edit_Profile: React.FC = () => {
   const [isTouched, setIsTouched] = useState(false);
@@ -59,15 +59,17 @@ const Edit_Profile: React.FC = () => {
     <IonPage>
       <My_Toolbar>Comment Post</My_Toolbar>
       <IonContent fullscreen>
-        <IonItem>
-            <IonTitle slot='start'></IonTitle>
-            <IonText slot='end'>69</IonText>
-        </IonItem>
-        <div className='comment'>
-            <IonItem style={{"margin-left": "50px", "width": "200px"}}>
-                <span slot='end'>hola hola</span>
+        <IonLabel>
+            <IonTitle style={{"margin-top": "30px", "margin-left": "30px"}}>Comentarios: 69</IonTitle>
+        </IonLabel>
+          <div className='comment'>
+            <IonItem style={{width: "300px"}} >
+              <img slot='start' style={{width: "50px"}} src="src/assets/img_random.jpg" alt="foto perfil"/>
+              <span>I think you should try...</span>
             </IonItem>
-        </div>
+          </div>
+        <IonList inset={true}>
+        </IonList>
       </IonContent>
       <Footer/>
     </IonPage>

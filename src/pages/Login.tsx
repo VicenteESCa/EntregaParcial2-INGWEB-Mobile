@@ -36,9 +36,7 @@ const Login: React.FC = () => {
       </My_Toolbar>
       <IonContent fullscreen>
           <IonItem>
-            <IonToolbar className='Titulo-Correo'>
-              <IonTitle>Iniciar sesion</IonTitle>
-            </IonToolbar>
+            <IonTitle style={{"text-align": "center"}}>Iniciar sesion</IonTitle>
           </IonItem>
           <IonItem>
             <IonTextarea 
@@ -77,10 +75,8 @@ const Login: React.FC = () => {
           </IonItem>
           <div className="login-wrapper">
             <IonItem>
-              <IonToolbar>
-                <IonButton className="my-button" routerLink='/Home'>Iniciar</IonButton>
-                <IonButton className="my-button" routerLink='/Sign_In'>Crear cuenta</IonButton>
-              </IonToolbar>
+              <IonButton className="my-button" routerLink='/Home'>Iniciar</IonButton>
+              <IonButton className="my-button" routerLink='/Sign_In'>Crear cuenta</IonButton>
             </IonItem>
           </div>
         <Footer/>
